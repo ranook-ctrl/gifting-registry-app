@@ -1,0 +1,128 @@
+/*
+ * Noontree — noon's brand typeface (proprietary, not on npm/CDN).
+ * Font files live in public/fonts/ (woff2 preferred, woff fallback).
+ *
+ * Two family shapes are declared because the components use both:
+ *   - per-weight family names (Noontree-Light … Noontree-Black),
+ *     used by the Field DS tokens and most components.
+ *   - a single "Noontree" family with weight variants, used by CreatorCard.
+ *
+ * All seven shipped weights are mapped: Light 300, Regular 400, Medium 500,
+ * SemiBold 600, Bold 700, ExtraBold 800, Black 900.
+ */
+
+/* ---- per-weight family names (Field DS tokens) ---- */
+@font-face {
+  font-family: 'Noontree-Light';
+  src: url('/fonts/Noontree-Light.woff2') format('woff2'),
+       url('/fonts/Noontree-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree-Regular';
+  src: url('/fonts/Noontree-Regular.woff2') format('woff2'),
+       url('/fonts/Noontree-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree-Medium';
+  src: url('/fonts/Noontree-Medium.woff2') format('woff2'),
+       url('/fonts/Noontree-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree-SemiBold';
+  src: url('/fonts/Noontree-SemiBold.woff2') format('woff2'),
+       url('/fonts/Noontree-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree-Bold';
+  src: url('/fonts/Noontree-Bold.woff2') format('woff2'),
+       url('/fonts/Noontree-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree-ExtraBold';
+  src: url('/fonts/Noontree-ExtraBold.woff2') format('woff2'),
+       url('/fonts/Noontree-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree-Black';
+  src: url('/fonts/Noontree-Black.woff2') format('woff2'),
+       url('/fonts/Noontree-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- unified "Noontree" family (weight selects the face) ---- */
+@font-face {
+  font-family: 'Noontree';
+  src: url('/fonts/Noontree-Light.woff2') format('woff2'),
+       url('/fonts/Noontree-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree';
+  src: url('/fonts/Noontree-Regular.woff2') format('woff2'),
+       url('/fonts/Noontree-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree';
+  src: url('/fonts/Noontree-Medium.woff2') format('woff2'),
+       url('/fonts/Noontree-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree';
+  src: url('/fonts/Noontree-SemiBold.woff2') format('woff2'),
+       url('/fonts/Noontree-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree';
+  src: url('/fonts/Noontree-Bold.woff2') format('woff2'),
+       url('/fonts/Noontree-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree';
+  src: url('/fonts/Noontree-ExtraBold.woff2') format('woff2'),
+       url('/fonts/Noontree-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noontree';
+  src: url('/fonts/Noontree-Black.woff2') format('woff2'),
+       url('/fonts/Noontree-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

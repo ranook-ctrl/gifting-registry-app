@@ -1,0 +1,176 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "landing",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:landing"
+      ],
+      "port": 3750
+    },
+    {
+      "name": "share-sheet",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:share-sheet"
+      ],
+      "port": 3615
+    },
+    {
+      "name": "gallery",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:gallery"
+      ],
+      "port": 3700
+    },
+    {
+      "name": "create-gift-list",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:create-gift-list"
+      ],
+      "port": 3710
+    },
+    {
+      "name": "address-sheet",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:address-sheet"
+      ],
+      "port": 3665
+    },
+    {
+      "name": "gifter-home",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:gifter-home"
+      ],
+      "port": 3730
+    },
+    {
+      "name": "registry-settings",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:registry-settings"
+      ],
+      "port": 3740
+    },
+    {
+      "name": "explorable-card",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:explorable-card"
+      ],
+      "port": 3675
+    },
+    {
+      "name": "page-headers",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:page-headers"
+      ],
+      "port": 3685
+    },
+    {
+      "name": "creator",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:creator"
+      ],
+      "port": 3720
+    },
+    {
+      "name": "address-pill",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:address-pill"
+      ],
+      "port": 3688
+    },
+    {
+      "name": "confirmation-sheet",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:confirmation-sheet"
+      ],
+      "port": 3695
+    },
+    {
+      "name": "gift-tracking",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:gift-tracking"
+      ],
+      "port": 3800
+    },
+    {
+      "name": "checkout",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:checkout"
+      ],
+      "port": 3820
+    },
+    {
+      "name": "cart-page",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:cart-page"
+      ],
+      "port": 3810
+    },
+    {
+      "name": "wishlist",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:wishlist"
+      ],
+      "port": 3750
+    },
+    {
+      "name": "gift-list-cards",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:gift-list-cards"
+      ],
+      "port": 3840
+    },
+    {
+      "name": "kids-login",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:kids-login"
+      ],
+      "port": 3850
+    },
+    {
+      "name": "hero-cards",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev:hero-cards"
+      ],
+      "port": 3860
+    }
+  ]
+}
