@@ -194,6 +194,10 @@ export function PageHeaderHero({
     }
 
     const readTop = () => (scroller ? scroller.scrollTop : window.scrollY);
+    const target: Window | HTMLElement = scroller ?? window;
+    let snapTimer: ReturnType<typeof setTimeout> | undefined;
+    let snapping = false;
+
     const onScroll = () => {
       const h = expandedHRef.current;
       // Collapse finishes exactly as the hero has shrunk to the minimised bar.
@@ -201,11 +205,30 @@ export function PageHeaderHero({
       const t = Math.min(1, Math.max(0, readTop() / distance));
       // Smoothstep: subtle early, settling as the hero exits — reads as a morph.
       setProgress(t * t * (3 - 2 * t));
+
+      // Snap to the nearest end state once scrolling settles. If the user leaves
+      // the hero part-collapsed, smooth-scroll to fully expanded (top) or fully
+      // minimised (the collapse distance), whichever is closer. `snapping` guards
+      // against the programmatic scroll re-triggering the snap.
+      if (snapping) return;
+      clearTimeout(snapTimer);
+      snapTimer = setTimeout(() => {
+        const cur = readTop();
+        if (cur > 0 && cur < distance) {
+          snapping = true;
+          target.scrollTo({ top: cur < distance / 2 ? 0 : distance, behavior: 'smooth' });
+          setTimeout(() => {
+            snapping = false;
+          }, 450);
+        }
+      }, 120);
     };
     onScroll();
-    const target: Window | HTMLElement = scroller ?? window;
     target.addEventListener('scroll', onScroll, { passive: true });
-    return () => target.removeEventListener('scroll', onScroll);
+    return () => {
+      clearTimeout(snapTimer);
+      target.removeEventListener('scroll', onScroll);
+    };
   }, [canCollapse]);
 
   // Height interpolated from the natural hero height down to the minimised bar.
